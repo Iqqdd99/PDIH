@@ -74,7 +74,7 @@ void my_setvideomode(BYTE modo){
 void my_getvideomode(void){
     union REGS inregs, outregs;
     inregs.h.ah = 0x0F;
-    int86(0x0F, &inregs, &outregs);
+    int86(0x10, &inregs, &outregs);
    
     if(inregs.h.al == 4){
         printf("Grafico");
@@ -93,12 +93,12 @@ void my_textcolor(void){
 
 //modifica el color de fondo con que se mostrarán los caracteres
 void my_textbackground(void){
-    // union REGS inregs, outregs;
-    // inregs.h.ah = 0x09;
-    // inregs.h.al = 0x00;
-    // inregs.h.bh = 0x10;
+    union REGS inregs, outregs;
+    inregs.h.ah = 0x09;
+    inregs.h.al = 0x00;
+    inregs.h.bh = 0x10;
 
-    // int86(0x09, &inregs, &outregs);
+    int86(0x10, &inregs, &outregs);
 }
 
 //borra toda la pantalla
