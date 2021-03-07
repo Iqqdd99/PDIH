@@ -8,9 +8,10 @@ codigo segment 'code'
 	assume cs:codigo, ds:datos, ss:pila
 	main PROC
 		mov cx,0
-		bucle: ;principio del bucle
 		mov ax,datos
 		mov ds,ax
+
+		bucle: ;principio del bucle
 
 		mov dx,OFFSET msg
 		mov ah,9
