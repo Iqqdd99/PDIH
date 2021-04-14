@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 
         //Movimiento de la pelota
         next_y = y + direction_y;
-        next_x = x + direction_x*2;
+        next_x = x + direction_x;
     
 
         //Calculo del movimiento pelota eje y
