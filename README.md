@@ -6,3 +6,4 @@
 4. **P2** - Programa básico usando la librería ncurses
 5. **S3** - Introducción Arduino
 6. **P3** - Continuación Arduino
+7. **S4** - Creación de módulos cargables en el Kernel de Linux
