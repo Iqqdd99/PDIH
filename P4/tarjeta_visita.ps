@@ -1,0 +1,107 @@
+%!
+%% Draws a square box at (x,y)=(10,200) from bottom-left
+
+newpath			% Start a new path
+
+175 750 moveto
+255  0 rlineto
+0 -165 rlineto
+-255  0 rlineto
+
+0.93 0.93 0.93 setrgbcolor
+
+fill
+
+closepath
+
+5 setlinewidth
+
+stroke
+
+newpath
+
+0 setgray
+0.8 setlinewidth
+
+% x  y   R  angI angF
+ 235 675   35   0   360   arc closepath
+gsave
+0.87 0.87 0.87 setrgbcolor fill
+grestore
+3 setlinewidth
+
+stroke
+
+closepath
+
+newpath			% Start a new path
+
+210 660 moveto
+50  0 rlineto
+-40 38  rlineto
+gsave
+0.97 0.97 0.97 setrgbcolor
+
+fill
+
+closepath
+
+5 setlinewidth
+
+stroke
+grestore
+closepath
+
+newpath			% Start a new path
+
+220 660 moveto
+40  0 rlineto
+-15 30  rlineto
+gsave
+0.97 0.97 0.97 setrgbcolor
+
+fill
+
+closepath
+
+5 setlinewidth
+
+stroke
+grestore
+closepath
+
+/Times-Roman findfont	% Get the basic font
+25 scalefont		% Scale the font to 20 points
+setfont			% Make it the current font
+
+newpath			% Start a new path
+285 700 moveto		% Lower left corner of text at (72, 72)
+
+(Sierra Blanca) show    % Typeset "Hello, world!"
+stroke
+
+closepath
+
+/Times-Roman findfont	% Get the basic font
+11 scalefont		% Scale the font to 20 points
+setfont			% Make it the current font
+
+newpath			% Start a new path
+285 655 moveto		% Lower left corner of text at (72, 72)
+(Luis Miguel Aguilar Gonzalez) show    % Typeset "Hello, world!"
+stroke
+closepath
+
+newpath			% Start a new path
+292 635 moveto		% Lower left corner of text at (72, 72)
+(Francisco Alvarez Terribas) show    % Typeset "Hello, world!"
+stroke
+closepath
+
+newpath			% Start a new path
+320 687 moveto		% Lower left corner of text at (72, 72)
+0.4 0.4 0.4 setrgbcolor
+(IT Solutions) show    % Typeset "Hello, world!"
+stroke
+closepath
+showpage		% We're done... eject the page
