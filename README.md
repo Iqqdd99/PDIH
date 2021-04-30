@@ -7,3 +7,6 @@
 5. **S3** - Introducción Arduino
 6. **P3** - Continuación Arduino
 7. **S4** - Creación de módulos cargables en el Kernel de Linux
+8. **P4** - Introducción al lenguaje PostScript
+   
+**Proyecto final** - Numpad 
