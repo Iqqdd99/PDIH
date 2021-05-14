@@ -8,5 +8,6 @@
 6. **P3** - Continuación Arduino
 7. **S4** - Creación de módulos cargables en el Kernel de Linux
 8. **P4** - Introducción al lenguaje PostScript
-   
+9. **P5** - Procesamiento de audio con R
+    
 **Proyecto final** - Numpad 
